@@ -18,7 +18,7 @@ app/
 ## Cài đặt (Python thuần, không dùng Conda)
 1. Clone repository:
    ```bash
-   git clone https://github.com/TrinhHuuTho/NLP_Course
+   git clone https://github.com/phamdung01032006/Project.git
    cd Project
    ```
 2. Tạo và kích hoạt môi trường ảo (`venv`):
