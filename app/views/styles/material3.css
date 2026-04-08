@@ -1,0 +1,93 @@
+:root {
+    --bg: #ffffff;
+    --fg: #121212;
+    --muted: #7a7a7a;
+    --line: #d7d7d7;
+    --surface: #ffffff;
+    --surface-2: #f5f5f5;
+    --chip-bg: #f0f0f0;
+    --chip-fg: #111111;
+}
+
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewContainer"] > .main,
+[data-testid="stMainBlockContainer"],
+.stApp {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stMainBlockContainer"] * {
+    color: inherit;
+}
+
+.top-nav-wrap {
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    padding: 10px 18px;
+    margin-bottom: 12px;
+    background: var(--surface);
+}
+
+.nav-dots {
+    color: var(--fg);
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.nav-brand {
+    color: #16a34a;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: right;
+}
+
+div[role="radiogroup"] {
+    justify-content: center;
+    gap: 10px;
+}
+
+div[role="radiogroup"] > label {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 6px 16px;
+}
+
+div[role="radiogroup"] > label:has(input:checked) {
+    border-color: var(--fg);
+    background: color-mix(in srgb, var(--surface) 70%, var(--chip-bg));
+}
+
+div[role="radiogroup"] p {
+    color: var(--fg);
+    font-size: 18px;
+    margin: 0;
+}
+
+.m3-card {
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    color: var(--fg);
+}
+
+.m3-chip {
+    display: inline-block;
+    background: var(--chip-bg);
+    color: var(--chip-fg);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-right: 6px;
+}
